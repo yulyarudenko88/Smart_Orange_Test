@@ -3,70 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DIGITAL PROJECT</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html">
-          <svg width="70" height="44">
-            <use href="/images/icons.svg#icon-logo"></use>
-          </svg>
+      <div class="header container">
+        <a class="logo" href="./index.html">
+          <img
+            class="logo-svg"
+            src="./images/logo.svg"
+            alt="logo"
+            width="69"
+            height="42"
+          />
         </a>
-        <ul>
-          <li><a href="./index.html">ГЛАВНАЯ</a></li>
-          <li><a href="#">ГАЛЕРЕЯ</a></li>
-          <li><a href="#">ПРОЕКТЫ</a></li>
-          <li><a href="#">СЕРТИФИКАТЫ</a></li>
-          <li><a href="#">КОНТАКТЫ</a></li>
-        </ul>
-      </nav>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-link" href="./index.html">ГЛАВНАЯ</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">ГАЛЕРЕЯ</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">ПРОЕКТЫ</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">СЕРТИФИКАТЫ</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section>
-        <h1>PROJECT<span>HOME</span></h1>
+        <div class="container">
+          <h1>PROJECT<span>HOME</span></h1>
+        </div>
       </section>
       <section>
-        <ul>
-          <li>
-            <img
-              srcset="/images/about-first.jpg 1x, /images/about-first@2x.jpg 2x"
-              src="/images/about-first.jpg"
-              alt="Небоскреб"
-            />
-          </li>
-          <li>
-            <img
-              srcset="
-                /images/about-second.jpg    1x,
-                /images/about-second@2x.jpg 2x
-              "
-              src="/images/about-second.jpg"
-              alt="Небоскреб, вид слева"
-            />
-          </li>
-          <li>
-            <img
-              srcset="/images/about-third.jpg 1x, /images/about-third@2x.jpg 2x"
-              src="/images/about-third.jpg"
-              alt="Небоскреб, вид снизу"
-            />
-          </li>
-        </ul>
-        <div>
-          <h2>О компании</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-          <a href="#"
-            >ЧИТАТЬ
-            <svg width="17" height="8">
-              <use href="/images/icons.svg#icon-right-arrow"></use></svg></a>
+        <div class="container">
+          <ul>
+            <li>
+              <img
+                srcset="
+                  ./images/about-first.jpg    1x,
+                  ./images/about-first@2x.jpg 2x
+                "
+                src="./images/about-first.jpg"
+                alt="Небоскреб"
+              />
+            </li>
+            <li>
+              <img
+                srcset="
+                  ./images/about-second.jpg    1x,
+                  ./images/about-second@2x.jpg 2x
+                "
+                src="./images/about-second.jpg"
+                alt="Небоскреб, вид слева"
+              />
+            </li>
+            <li>
+              <img
+                srcset="
+                  ./images/about-third.jpg    1x,
+                  ./images/about-third@2x.jpg 2x
+                "
+                src="./images/about-third.jpg"
+                alt="Небоскреб, вид снизу"
+              />
+            </li>
+          </ul>
+          <div>
+            <h2>О компании</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+            <a href="#"
+              >ЧИТАТЬ
+              <svg width="17" height="8">
+                <use href="./images/icons.svg#icon-right-arrow"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
       <section>
@@ -94,48 +127,50 @@
         <ul>
           <li>
             <img
-              srcset="/images/company_1.jpg 1x, /images/company_1@2x.jpg 2x"
-              src="/images/company_1.jpg"
+              srcset="./images/company_1.jpg 1x, ./images/company_1@2x.jpg 2x"
+              src="./images/company_1.jpg"
               alt="Проект аэропорта"
             />
           </li>
           <li>
             <img
-              srcset="/images/company_2.jpg 1x, /images/company_2@2x.jpg 2x"
-              src="/images/company_2.jpg"
+              srcset="./images/company_2.jpg 1x, ./images/company_2@2x.jpg 2x"
+              src="./images/company_2.jpg"
               alt="Проект выставочного центра"
             />
           </li>
           <li>
             <img
-              srcset="/images/company_3.jpg 1x, /images/company_3@2x.jpg 2x"
-              src="/images/company_3.jpg"
+              srcset="./images/company_3.jpg 1x, ./images/company_3@2x.jpg 2x"
+              src="./images/company_3.jpg"
               alt="Проект сельскохозяйственного комплекса"
             />
           </li>
           <li>
             <img
-              srcset="/images/company_4.jpg 1x, /images/company_4@2x.jpg 2x"
-              src="/images/company_4.jpg"
+              srcset="./images/company_4.jpg 1x, ./images/company_4@2x.jpg 2x"
+              src="./images/company_4.jpg"
               alt="Проект жилого комплекса"
             />
           </li>
           <li>
             <img
-              srcset="/images/company_5.jpg 1x, /images/company_5@2x.jpg 2x"
-              src="/images/company_5.jpg"
+              srcset="./images/company_5.jpg 1x, ./images/company_5@2x.jpg 2x"
+              src="./images/company_5.jpg"
               alt="Проект стадиона"
             />
           </li>
         </ul>
       </section>
-      <section><h2>Связаться с нами</h2>
-      <form action="#"></form>
-      <img
-      srcset="/images/submit.jpg 1x, /images/submit@2x.jpg 2x"
-      src="/images/submit.jpg"
-      alt="Человек отвечает на телефонный звонок"
-    /></section>
+      <section>
+        <h2>Связаться с нами</h2>
+        <form action="#"></form>
+        <img
+          srcset="./images/submit.jpg 1x, ./images/submit@2x.jpg 2x"
+          src="./images/submit.jpg"
+          alt="Человек отвечает на телефонный звонок"
+        />
+      </section>
     </main>
     <footer></footer>
   </body>
