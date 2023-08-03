@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DIGITAL PROJECT</title>
-    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -126,46 +135,122 @@
           </ul>
         </div>
       </section>
-      <section  class="project section">
+      <section class="projects section">
         <div class="container">
           <h2 class="section-title">Наши проекты</h2>
-          <ul class="project-gallery">
-            <li>
-              <img
-                srcset="./images/company_1.jpg 1x, ./images/company_1@2x.jpg 2x"
-                src="./images/company_1.jpg"
-                alt="Проект аэропорта"
-              />
+          <ul class="projects-gallery">
+            <li class="projects-item">
+              <div class="project-thumb">
+                <img
+                  srcset="
+                    ./images/company_1.jpg    1x,
+                    ./images/company_1@2x.jpg 2x
+                  "
+                  src="./images/company_1.jpg"
+                  alt="Проект аэропорта"
+                />
+                <div class="overlay">
+                  <h3 class="overlay-title">ДОСУГОВЫЙ ЦЕНТР</h3>
+                  <a class="overlay-link" href="#"
+                    >ПОДРОБНЕЕ
+                    <svg width="17" height="8">
+                      <use href="./images/icons.svg#icon-right-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </li>
-            <li>
-              <img
-                srcset="./images/company_2.jpg 1x, ./images/company_2@2x.jpg 2x"
-                src="./images/company_2.jpg"
-                alt="Проект выставочного центра"
-              />
+            <li class="projects-item">
+              <div class="project-thumb">
+                <img
+                  srcset="
+                    ./images/company_2.jpg    1x,
+                    ./images/company_2@2x.jpg 2x
+                  "
+                  src="./images/company_2.jpg"
+                  alt="Проект выставочного центра"
+                />
+                <div class="overlay">
+                  <h3 class="overlay-title">ВЫСТАВОЧНЫЙ ЦЕНТР</h3>
+                  <a class="overlay-link" href="#"
+                    >ПОДРОБНЕЕ
+                    <svg width="17" height="8">
+                      <use href="./images/icons.svg#icon-right-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </li>
-            <li>
-              <img
-                srcset="./images/company_3.jpg 1x, ./images/company_3@2x.jpg 2x"
-                src="./images/company_3.jpg"
-                alt="Проект сельскохозяйственного комплекса"
-              />
+            <li class="projects-item">
+              <div class="project-thumb">
+                <img
+                  srcset="
+                    ./images/company_3.jpg    1x,
+                    ./images/company_3@2x.jpg 2x
+                  "
+                  src="./images/company_3.jpg"
+                  alt="Проект сельскохозяйственного комплекса"
+                />
+                <div class="overlay">
+                  <h3 class="overlay-title">С/Г Комплес</h3>
+                  <a class="overlay-link" href="#"
+                    >ПОДРОБНЕЕ
+                    <svg width="17" height="8">
+                      <use href="./images/icons.svg#icon-right-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </li>
-            <li>
-              <img
-                srcset="./images/company_4.jpg 1x, ./images/company_4@2x.jpg 2x"
-                src="./images/company_4.jpg"
-                alt="Проект жилого комплекса"
-              />
+            <li class="projects-item">
+              <div class="project-thumb">
+                <img
+                  srcset="
+                    ./images/company_4.jpg    1x,
+                    ./images/company_4@2x.jpg 2x
+                  "
+                  src="./images/company_4.jpg"
+                  alt="Проект жилого комплекса"
+                />
+                <div class="overlay">
+                  <h3 class="overlay-title">Жилой Комплес</h3>
+                  <a class="overlay-link" href="#"
+                    >ПОДРОБНЕЕ
+                    <svg width="17" height="8">
+                      <use href="./images/icons.svg#icon-right-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </li>
-            <li>
-              <img
-                srcset="./images/company_5.jpg 1x, ./images/company_5@2x.jpg 2x"
-                src="./images/company_5.jpg"
-                alt="Проект стадиона"
-              />
+            <li class="projects-item">
+              <div class="project-thumb">
+                <img
+                  srcset="
+                    ./images/company_5.jpg    1x,
+                    ./images/company_5@2x.jpg 2x
+                  "
+                  src="./images/company_5.jpg"
+                  alt="Проект стадиона"
+                />
+                <div class="overlay">
+                  <h3 class="overlay-title">Стадион</h3>
+                  <a class="overlay-link" href="#"
+                    >ПОДРОБНЕЕ
+                    <svg width="17" height="8">
+                      <use href="./images/icons.svg#icon-right-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </li>
           </ul>
+          <a class="button-secondary" href="#"
+                >ВСЕ ПРОЕКТЫ
+                <svg width="17" height="8">
+                  <use href="./images/icons.svg#icon-right-arrow"></use>
+                </svg>
+              </a>
         </div>
       </section>
       <section>
@@ -182,5 +267,14 @@
     </main>
     <footer></footer>
     <script defer src="./js/addActiveClass.js"></script>
+    <script>
+      const overlayElements = document.querySelectorAll('.overlay');
+      overlayElements.forEach((overlay) => {
+        const overlayTitle = overlay.querySelector('.overlay-title');
+        const overlayWidth = overlay.offsetWidth;
+        const fontSize = overlayWidth *0.1; 
+        overlayTitle.style.fontSize = `${fontSize}px`;
+      });
+    </script>
   </body>
 </html>

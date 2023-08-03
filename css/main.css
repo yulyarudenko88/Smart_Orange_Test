@@ -30,6 +30,32 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button-secondary, .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 29.5px;
+  padding-bottom: 29.5px;
+  gap: 12px;
+  width: 222px;
+  background-color: #FFF;
+  color: #333;
+  font-family: inherit;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 body {
   background-color: #FFF;
   color: #333;
@@ -76,6 +102,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -104,29 +131,6 @@ p {
 }
 
 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 29.5px;
-  padding-bottom: 29.5px;
-  gap: 12px;
-  width: 222px;
-  background-color: #FFF;
-  color: #333;
-  font-family: inherit;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 2.4px;
-  text-transform: uppercase;
-  cursor: pointer;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -136,6 +140,24 @@ p {
 .button:hover, .button:focus {
   color: #FFF;
   background-color: #000;
+}
+
+.button-secondary {
+  margin-left: auto;
+  padding-top: 28.5px;
+  padding-bottom: 28.5px;
+  border: 1px solid #333;
+  color: #FFF;
+  background-color: #333;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-secondary svg {
+  fill: currentColor;
+}
+.button-secondary:hover, .button-secondary:focus {
+  color: #333;
+  background-color: #FFF;
 }
 
 .section-title {
@@ -221,21 +243,29 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 30px;
-  padding-left: 100px;
-  padding-right: 70px;
-  gap: 30px;
   background: #FBFBFB;
+}
+@media screen and (min-width: 1440px) {
+  .presentation-wrap {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 70px;
+    gap: 30px;
+  }
 }
 
 .presentation-gallery {
   display: grid;
-  grid-column-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 570px;
+}
+@media screen and (min-width: 1440px) {
+  .presentation-gallery {
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 570px;
+  }
 }
 
 .gallery-column {
@@ -243,8 +273,10 @@ p {
   grid-row-gap: 30px;
 }
 
-.presentation-desc {
-  max-width: 400px;
+@media screen and (min-width: 1440px) {
+  .presentation-desc {
+    max-width: 400px;
+  }
 }
 
 .desc-text {
@@ -287,18 +319,20 @@ p {
   line-height: 1;
 }
 
-.list-item-desc {
-  width: 279px;
-  color: #333;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 1.6;
-}
-.list-item-desc--extended {
-  width: 420px;
+@media screen and (min-width: 1440px) {
+  .list-item-desc {
+    width: 279px;
+    color: #333;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  .list-item-desc--extended {
+    width: 420px;
+  }
 }
 
-.project-gallery {
+.projects-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,4 +341,85 @@ p {
   gap: 30px;
   margin-top: 60px;
   margin-bottom: 30px;
+}
+
+.project-thumb {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.project-thumb .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 48px;
+  padding-bottom: 79px;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.8);
+}
+
+.project-thumb:hover .overlay,
+.link:focus .overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.overlay-title {
+  margin-bottom: 14px;
+  color: #FFF;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.overlay-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  color: #FFF;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+.overlay-link svg {
+  fill: currentColor;
+}
+.overlay-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+  background-color: #FFF;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.overlay-link:hover::before, .overlay-link:hover::after, .overlay-link:focus::before, .overlay-link:focus::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }/*# sourceMappingURL=main.css.map */

@@ -18,11 +18,13 @@
 }
 
 .list-item-desc {
-  width: 279px;
-  color: $main-color;
-  @include font($font-weight-regular, 22px, 1.6);
-
-  &--extended{
-    width: 420px;
+  @media screen and (min-width: $desktop) {
+    width: 279px;
+    color: $main-color;
+    @include font($font-weight-regular, 22px, 1.6);
+  
+    &--extended{
+      width: 420px;
+    }
   }
 }

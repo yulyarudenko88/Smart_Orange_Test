@@ -2,20 +2,25 @@
   position: relative;
   display: flex;
   // margin-bottom: -30px;
-  padding-top: 30px;
-  padding-left: 100px;
-  padding-right: 70px;
-  gap: 30px;
-
   background: $section-background-color;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 70px;
+    gap: 30px;
+  }
 }
 
 .presentation-gallery {
   display: grid;
-  grid-column-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  align-items: center;
-  max-width: 570px;
+
+  @media screen and (min-width: $desktop) {
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    align-items: center;
+    max-width: 570px;
+  }
 }
 
 .gallery-column {
@@ -24,7 +29,10 @@
 }
 
 .presentation-desc {
-  max-width: 400px;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 400px;
+  }
 }
 
 .desc-text {
