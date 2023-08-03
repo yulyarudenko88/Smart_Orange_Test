@@ -1,0 +1,28 @@
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.services-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.list-item-number {
+  color: $number-color;
+  font-family: $secondary-text-style;
+  @include font($font-weight-heavy, 200px, 1);
+}
+
+.list-item-desc {
+  width: 279px;
+  color: $main-color;
+  @include font($font-weight-regular, 22px, 1.6);
+
+  &--extended{
+    width: 420px;
+  }
+}

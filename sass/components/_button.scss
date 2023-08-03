@@ -1,0 +1,32 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 29.5px;
+  padding-bottom: 29.5px;
+  gap: 12px;
+  width: 222px;
+  background-color: $main-background-color;
+
+  color: $main-color;
+  font-family: inherit;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  line-height: 1;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition: background-color $time-function, color $time-function;
+
+  svg {
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $secondary-background-color;
+  }
+}

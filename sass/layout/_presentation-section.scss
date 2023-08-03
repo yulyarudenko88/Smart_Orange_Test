@@ -1,0 +1,35 @@
+.presentation-wrap {
+  position: relative;
+  display: flex;
+  // margin-bottom: -30px;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 70px;
+  gap: 30px;
+
+  background: $section-background-color;
+}
+
+.presentation-gallery {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  align-items: center;
+  max-width: 570px;
+}
+
+.gallery-column {
+  display: grid;
+  grid-row-gap: 30px;
+}
+
+.presentation-desc {
+  max-width: 400px;
+}
+
+.desc-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: $desc-color;
+  @include font($font-weight-thin, 16px, 1.6);
+}

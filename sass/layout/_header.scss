@@ -1,13 +1,69 @@
 .header {
   display: flex;
   align-items: center;
-}
 
-.header-nav{
-  margin-left: 330px;
+  @media screen and (max-width: 1439px) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 330px;
+  }
 }
 
 .nav-list {
   display: flex;
   gap: 60px;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 45px;
+  padding-bottom: 45px;  
+ 
+  color: $main-color;
+  @include font($font-weight-regular, 12px, 1);
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+
+  position: relative;
+
+  &::before {
+    @extend %underline;
+    top: 35%;    
+  }
+
+  &::after {
+    @extend %underline;
+    bottom: 35%;
+    left: 0;
+  }
+
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      transform: scale(1);
+    }
+  }
+}
+
+.nav-list {
+  display: flex;
+  gap: 60px;
+}
+
+.active {
+  &::before {
+    @extend %underline;
+    transform: scale(1);
+    top: 35%;
+  }
+
+  &::after {
+    @extend %underline;
+    transform: scale(1);
+    bottom: 35%;
+    left: 0;
+  }
 }

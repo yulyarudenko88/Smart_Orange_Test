@@ -1,0 +1,4 @@
+.section-title {
+  color: $secondary-color;
+  @include font($font-weight-thin, 64px, 1);
+}
