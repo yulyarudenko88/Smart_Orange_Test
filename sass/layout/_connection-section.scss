@@ -1,0 +1,137 @@
+.connection-wrap {
+  display: flex;
+  margin-top: 22px;
+  gap: 30px;
+}
+
+.form {
+  min-width: 391px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input-list {
+  margin-bottom: 22px;
+}
+
+.form-input-item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.form-label {
+  position: absolute;
+  left: 21px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include font($font-weight-regular, 14px, 1);
+  letter-spacing: 0.56px;
+  color: $placeholder-color;
+
+  &::after {
+    content: "*";
+    color: $validation-color;
+  }
+}
+
+.form-textarea-label {
+  left: 21px;
+  top: 14px;
+}
+
+.form-input {
+  outline: none;
+  width: 100%;
+  color: inherit;
+  font-size: 14px;
+  background: $input-background-color;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-left: 21px;
+  border: 1px solid $input-background-color;
+
+  transition: border $time-function, background $time-function;
+
+  &:focus,
+  &:hover {
+    background: transparent;
+    border-color: $input-background-color;
+    cursor: pointer;
+  }
+
+  &::placeholder {
+    @include font($font-weight-regular, 14px, 1);
+    letter-spacing: 0.56px;
+    color: $placeholder-color;
+  }
+
+  &:focus::placeholder {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.form-textarea {
+  resize: none;
+  height: 147px;
+  padding: 14px 21px;
+}
+
+.form-input:focus + .form-label {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.label-hidden {
+  display: none;
+}
+
+.invalid-input {
+  border-color: $validation-color;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+.checkbox-input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.checkbox-checked {
+  display: block;
+  min-width: 24px;
+  height: 24px;
+  border: 2px solid $input-background-color;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.checkbox-input:checked + .checkbox-checked {
+  border-color: transparent;
+  background-image: url(../../images/check.svg);
+  background-color: $input-background-color;
+  background-origin: border-box;
+  background-size: contain;
+}
+
+.checkbox-desc {
+  @include font($font-weight-regular, 14px, 1);
+  letter-spacing: 0.42px;
+  color: $main-color;
+}

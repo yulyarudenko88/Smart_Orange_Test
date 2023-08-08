@@ -16,7 +16,7 @@ ul {
 }
 
 .container {
-  margin: 0 auto;  
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -37,6 +37,10 @@ ul {
 
 .section {
   padding: 60px 0;
+
+  &--bottom {
+    padding-bottom: 120px;
+  }
 }
 
 img {

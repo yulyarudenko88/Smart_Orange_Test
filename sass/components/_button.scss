@@ -15,7 +15,6 @@
 
 .button-secondary {
   @extend %button;
-  margin-left: auto;
   padding-top: 28.5px;
   padding-bottom: 28.5px;
   border: 1px solid $main-color;
@@ -31,5 +30,13 @@
   &:focus {
     color: $main-color;
     background-color: $main-background-color;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &--right {
+    margin-left: auto;
   }
 }

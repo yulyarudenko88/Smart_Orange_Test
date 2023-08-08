@@ -48,11 +48,6 @@
   }
 }
 
-.nav-list {
-  display: flex;
-  gap: 60px;
-}
-
 .active {
   &::before {
     @extend %underline;

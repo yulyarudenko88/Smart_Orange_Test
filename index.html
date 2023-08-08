@@ -18,6 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -26,7 +32,7 @@
         <a class="logo" href="./index.html">
           <img
             class="logo-svg"
-            src="./images/logo.svg"
+            src="./images/logo-header.svg"
             alt="logo"
             width="69"
             height="42"
@@ -245,35 +251,256 @@
               </div>
             </li>
           </ul>
-          <a class="button-secondary" href="#"
-                >ВСЕ ПРОЕКТЫ
+          <a class="button-secondary button-secondary--right" href="#"
+            >ВСЕ ПРОЕКТЫ
+            <svg width="17" height="8">
+              <use href="./images/icons.svg#icon-right-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="connection section section--bottom">
+        <div class="container">
+          <h2 class="section-title">Связаться с нами</h2>
+          <div class="connection-wrap">
+            <form class="form">
+              <ul class="form-input-list">
+                <li class="form-input-item">
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="username"
+                    placeholder="Имя"
+                  />
+                </li>
+                <li class="form-input-item">
+                  <input
+                    class="form-input"
+                    id="tel"
+                    type="tel"
+                    name="phone"
+                    pattern="[0-9]{10,}"
+                    required
+                  />
+                  <label class="form-label" for="tel">Номер телефона</label>
+                </li>
+                <li class="form-input-item">
+                  <input
+                    class="form-input"
+                    id="email"
+                    type="email"
+                    name="email"
+                    required
+                  /><label class="form-label" for="email">E-mail</label>
+                </li>
+                <li class="form-input-item">
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="item"
+                    placeholder="Интересующий товар/услуга"
+                  />
+                </li>
+                <li class="form-input-item">
+                  <textarea
+                    class="form-input form-textarea"
+                    id="feetback"
+                    name="feetback"
+                    minlength="10"
+                    required
+                  ></textarea>
+                  <label class="form-label form-textarea-label" for="feetback"
+                    >Сообщение</label
+                  >
+                </li>
+              </ul>
+
+              <div class="checkbox">
+                <label class="checkbox-label" for="checkbox">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    name="checkbox"
+                    value="checkbox"
+                    id="checkbox"
+                  />
+                  <span class="checkbox-checked"></span>
+                  <span class="checkbox-desc"
+                    >Отправляя заявку Вы соглашаетесь с политикой
+                    конфиденциальности</span
+                  ></label
+                >
+              </div>
+
+              <button class="button-secondary" type="submit" disabled>
+                ОТПРАВИТЬ
                 <svg width="17" height="8">
                   <use href="./images/icons.svg#icon-right-arrow"></use>
                 </svg>
-              </a>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <h2 class="section-title">Связаться с нами</h2>
-          <form action="#"></form>
-          <img
-            srcset="./images/submit.jpg 1x, ./images/submit@2x.jpg 2x"
-            src="./images/submit.jpg"
-            alt="Человек отвечает на телефонный звонок"
-          />
+              </button>
+            </form>
+            <img
+              srcset="./images/submit.jpg 1x, ./images/submit@2x.jpg 2x"
+              src="./images/submit.jpg"
+              alt="Человек отвечает на телефонный звонок"
+            />
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-main container">
+        <a class="footer-logo" href="./index.html">
+          <img
+            class="logo-svg"
+            src="./images/logo-footer.svg"
+            alt="logo"
+            width="145"
+            height="94"
+          />
+        </a>
+        <div>
+          <h2 class="footer-title">Информация</h2>
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-link" href="./index.html">Главная</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-link" href="#">Галерея</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-link" href="#">Проекты</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-link" href="#">Сертификаты</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-address">
+          <h2 class="footer-title">Контакты</h2>
+          <address>
+            <ul class="address-list">
+              <li class="address-list-item">
+                <svg width="11" height="16">
+                  <use href="./images/icons.svg#icon-location"></use>
+                </svg>
+                <a
+                  class="address-list-link"
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >100000, Республика Казахстан, г. Караганда, ул. Телевизионная
+                  10</a
+                >
+              </li>
+              <li class="address-list-item">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <a class="address-list-link" href="tel:+38 (000) 000 00 00"
+                  >+38 (000) 000 00 00</a
+                >
+              </li>
+              <li class="address-list-item">
+                <svg width="16" height="11">
+                  <use href="./images/icons.svg#icon-letter"></use>
+                </svg>
+                <a class="address-list-link" href="mailto:mail@gmail.com"
+                  >mail@gmail.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div>
+          <h2 class="footer-title">Социальные сети</h2>
+          <ul class="social-list">
+            <li>
+              <a class="social-list-link" href="#">
+                <svg width="10" height="19">
+                  <use href="../../images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-list-link" href="#">
+                <svg width="22" height="17">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-list-link" href="#">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linked-in"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-list-link" href="#">
+                <svg width="14" height="19">
+                  <use href="./images/icons.svg#icon-pininterest"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-second">
+        <p class="footer-second-text">
+          &copy; 2019 Digital Project. Все права защищены.
+        </p>
+      </div>
+    </footer>
     <script defer src="./js/addActiveClass.js"></script>
     <script>
-      const overlayElements = document.querySelectorAll('.overlay');
+      const overlayElements = document.querySelectorAll(".overlay");
       overlayElements.forEach((overlay) => {
-        const overlayTitle = overlay.querySelector('.overlay-title');
+        const overlayTitle = overlay.querySelector(".overlay-title");
         const overlayWidth = overlay.offsetWidth;
-        const fontSize = overlayWidth *0.1; 
+        const fontSize = overlayWidth * 0.1;
         overlayTitle.style.fontSize = `${fontSize}px`;
+      });
+    </script>
+    <script>
+      const formInputs = document.querySelectorAll(".form-input");
+
+      formInputs.forEach((input) => {
+        input.addEventListener("input", () => {
+          const label = input.nextElementSibling;
+          if (!label) {
+            return;
+          }
+
+          if (!input.checkValidity() || input.value.trim() === "") {
+            input.classList.add("invalid-input");
+          } else {
+            input.classList.remove("invalid-input");
+          }
+
+          if (input.value.trim() === "") {
+            label.classList.remove("label-hidden");
+          } else {
+            label.classList.add("label-hidden");
+          }
+        });
+      });
+    </script>
+    <script>
+      const submitButton = document.querySelector(".form .button-secondary");
+      const checkbox = document.querySelector(".form .checkbox-input");
+
+      checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+          submitButton.removeAttribute("disabled");
+        } else {
+          submitButton.setAttribute("disabled", "disabled");
+        }
       });
     </script>
   </body>

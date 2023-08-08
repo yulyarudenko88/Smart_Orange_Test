@@ -1,0 +1,22 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: $white-color;
+
+  transition: background-color $time-function, fill $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: $white-color;
+    fill: $footer-background-color;
+  }
+}
