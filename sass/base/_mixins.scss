@@ -8,3 +8,8 @@
   width: $w;
   height: $h;
 }
+
+// @mixin adaptive-value($property, $startSize, $minSize) {
+// $addSize: $startSize - $minSize;
+// #{$property}: calc(#{$minSize}px + #{$addSize} * ((100vw - 320px) / (1440 - 320)));
+// }

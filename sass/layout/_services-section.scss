@@ -1,7 +1,9 @@
 .services-list {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
 }
 
 .services-list-item {

@@ -1,4 +1,9 @@
 .section-title {
   color: $secondary-color;
-  @include font($font-weight-thin, 64px, 1);
+  @include font($font-weight-thin, 50px, 1);
+
+  @media screen and (min-width: $desktop) {
+    font-size: 64px;
+  }
+  // @include adaptive-value(font-size, 64, 54);
 }
