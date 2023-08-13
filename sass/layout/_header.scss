@@ -8,6 +8,10 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  @media screen and (min-width: $desktop) {
+    padding-right: 126px;
+  }
 }
 
 .menu-button {
@@ -95,7 +99,7 @@
     padding-bottom: 45px;
 
     &::before {
-      top: 30%;
+      top: 35%;
     }
   }
 }
@@ -116,7 +120,7 @@
 
   @media screen and (min-width: $tablet) {
     &::before {
-      top: 30%;
+      top: 35%;
     }
   }
 }

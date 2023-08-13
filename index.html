@@ -74,10 +74,55 @@
         </div>
       </div>
     </header>
-   <main>
-      <section>
+    <main>
+      <section class="hero">
         <div class="container">
-          <h1>PROJECT<span>HOME</span></h1>
+          <div class="slider">
+            <div class="slider-desc">
+              <h1 class="hero-title">PROJECT <span>HOME</span></h1>
+              <ul class="slider-switch">
+                <li>
+                  <button class="slider-btn" aria-label="Переключатель слайдов">
+                    <svg width="17" height="8">
+                      <use href="./images/icons.svg#icon-left-arrow"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li><button class="slider-btn" aria-label="Переключатель слайдов">
+                  <svg width="17" height="8">
+                    <use href="./images/icons.svg#icon-right-arrow"></use>
+                  </svg></li>
+              </ul>
+              <ul class="slider-pagination">
+                <li class="pagination-item">01</li>
+                <li class="pagination-item">02</li>
+              </ul>
+            </div>
+            <div class="slider-gallery">
+              <ul class="slider-gallery-list">
+                <li class="slide">
+                  <img
+                    srcset="
+                      ./images/slide_1.jpg 1x,
+                      ./images/slide_1.jpg@2x.jpg 2x
+                    "
+                    src="./images/slide_1.jpg"
+                    alt="первый слайд"
+                  />
+                </li>
+                <li class="slide">
+                  <img
+                    srcset="
+                      ./images/slide_1.jpg 1x,
+                      ./images/slide_1.jpg@2x.jpg 2x
+                    "
+                    src="./images/slide_1.jpg"
+                    alt="первый слайд"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="presentation section">

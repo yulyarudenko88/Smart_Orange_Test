@@ -65,3 +65,24 @@
     display: none;
   }
 }
+
+.slider-btn{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  @include size( 53px, 53px);
+  border: 1px solid $number-color;
+  background-color: $white-color;
+
+  transition: background-color $time-function;
+  cursor: pointer;
+
+  svg {
+    fill: $main-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #F9F9F9;
+  }
+}
