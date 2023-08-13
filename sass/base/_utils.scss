@@ -16,23 +16,10 @@ ul {
 }
 
 .container {
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
-    padding-left: 135px;
-    padding-right: 135px;
-  }
 }
 
 .section {

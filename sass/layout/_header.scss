@@ -1,26 +1,69 @@
 .header {
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
-  @media screen and (max-width: 1439px) {
-    justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.menu-button {
+  .icon-cross {
+    display: none;
   }
 
-  @media screen and (min-width: $desktop) {
-    gap: 330px;
+  &.is-open {
+    .icon-cross {
+      display: block;
+    }
+
+    .icon-menu {
+      display: none;
+    }
+  }
+}
+
+.menu-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+
+    padding: 25px;
+    background-color: $main-background-color;
+    overflow-y: scroll;
+
+    &.is-open {
+      display: block;
+    }
   }
 }
 
 .nav-list {
-  display: flex;
-  gap: 60px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 60px;
+  }
+}
+
+.nav-list-item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .nav-link {
   display: block;
-  padding-top: 45px;
-  padding-bottom: 45px;  
- 
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: $main-color;
   @include font($font-weight-regular, 12px, 1);
   letter-spacing: 2.4px;
@@ -30,7 +73,7 @@
 
   &::before {
     @extend %underline;
-    top: 35%;    
+    top: 30%;
   }
 
   &::after {
@@ -46,13 +89,22 @@
       transform: scale(1);
     }
   }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    &::before {
+      top: 30%;
+    }
+  }
 }
 
 .active {
   &::before {
     @extend %underline;
     transform: scale(1);
-    top: 35%;
+    top: 30%;
   }
 
   &::after {
@@ -60,5 +112,11 @@
     transform: scale(1);
     bottom: 35%;
     left: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    &::before {
+      top: 30%;
+    }
   }
 }

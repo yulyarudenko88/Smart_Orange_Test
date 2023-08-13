@@ -34,7 +34,7 @@
 }
 
 .gallery-column {
-  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: none;
   }
 
@@ -46,10 +46,11 @@
 }
 
 .gallery-item {
-  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 260px;
   }
 }
+
 .gallery-item img {
   max-width: 100%;
   height: 100%;

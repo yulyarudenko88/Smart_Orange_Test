@@ -40,3 +40,28 @@
     margin-left: auto;
   }
 }
+
+.menu-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  svg {
+    fill: $secondary-color;
+    transition: fill $time-function;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $main-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
