@@ -214,13 +214,13 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="projects section">
+      <section class="projects section">
         <div class="container">
           <h2 class="section-title">Наши проекты</h2>
           <ul class="projects-gallery">
             <li class="projects-item">
               <div class="project-thumb">
-                <img
+                <img class="projects-img"
                   srcset="
                     ./images/company_1.jpg    1x,
                     ./images/company_1@2x.jpg 2x
@@ -241,7 +241,7 @@
             </li>
             <li class="projects-item">
               <div class="project-thumb">
-                <img
+                <img class="projects-img"
                   srcset="
                     ./images/company_2.jpg    1x,
                     ./images/company_2@2x.jpg 2x
@@ -262,7 +262,7 @@
             </li>
             <li class="projects-item">
               <div class="project-thumb">
-                <img
+                <img class="projects-img"
                   srcset="
                     ./images/company_3.jpg    1x,
                     ./images/company_3@2x.jpg 2x
@@ -283,7 +283,7 @@
             </li>
             <li class="projects-item">
               <div class="project-thumb">
-                <img
+                <img class="projects-img"
                   srcset="
                     ./images/company_4.jpg    1x,
                     ./images/company_4@2x.jpg 2x
@@ -304,7 +304,7 @@
             </li>
             <li class="projects-item">
               <div class="project-thumb">
-                <img
+                <img class="projects-img"
                   srcset="
                     ./images/company_5.jpg    1x,
                     ./images/company_5@2x.jpg 2x
@@ -331,7 +331,7 @@
             </svg>
           </a>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="connection section section--bottom">
         <div class="container">
           <h2 class="section-title">Связаться с нами</h2>
@@ -533,15 +533,7 @@
     <script defer src="./js/addActiveClass.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
     <script defer src="./js/slider.js"></script>
-    <script>
-      const overlayElements = document.querySelectorAll(".overlay");
-      overlayElements.forEach((overlay) => {
-        const overlayTitle = overlay.querySelector(".overlay-title");
-        const overlayWidth = overlay.offsetWidth;
-        const fontSize = overlayWidth * 0.1;
-        overlayTitle.style.fontSize = `${fontSize}px`;
-      });
-    </script>
+    <script src="./js/changeTitleFontSize.js"></script>
     <script>
       const formInputs = document.querySelectorAll(".form-input");
 
