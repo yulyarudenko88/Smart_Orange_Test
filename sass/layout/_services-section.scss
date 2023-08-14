@@ -1,4 +1,6 @@
 .services-list {
+  margin-top: 30px;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
@@ -11,22 +13,52 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+
+  @media screen and (max-width: 767px) {
+    align-items: normal;
+    
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.services-list-item:first-child {
+  @media screen and (min-width: $tablet) {
+    flex: 0 0 38%;
+  }
+
+  @media screen and (min-width: 1079px) {
+    flex: 0 0 33%;
+  }
+}
+
+.services-list-item:last-child {
+  @media screen and (min-width: $tablet) {
+    flex: 0 0 55%;
+  }
+
+  @media screen and (min-width: 1079px) {
+    flex: 0 0 50%;
+  }
 }
 
 .list-item-number {
   color: $number-color;
   font-family: $secondary-text-style;
-  @include font($font-weight-heavy, 200px, 1);
+  @include font($font-weight-heavy, 50px, 1);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 200px;
+  }
 }
 
 .list-item-desc {
-  @media screen and (min-width: $desktop) {
-    width: 279px;
-    color: $main-color;
-    @include font($font-weight-regular, 22px, 1.6);
-  
-    &--extended{
-      width: 420px;
-    }
+  color: $main-color;
+  @include font($font-weight-regular, 18px, 1.4);
+
+  @media screen and (min-width: 1079px) {
+    font-size: 22px;
+    line-height: 1.63;
   }
 }

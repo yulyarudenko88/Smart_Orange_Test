@@ -81,7 +81,12 @@ ul {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 30px 0;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
 }
 .section--bottom {
   padding-bottom: 120px;
@@ -305,6 +310,7 @@ p {
     position: absolute;
     top: 100%;
     right: 0px;
+    z-index: 10;
     padding: 25px;
     background-color: #FFF;
     overflow-y: scroll;
@@ -403,7 +409,7 @@ p {
   .slider-desc {
     position: absolute;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
   }
 }
 @media screen and (min-width: 768px) {
@@ -556,7 +562,7 @@ p {
   position: absolute;
   bottom: 0;
   left: -1px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .slide {
@@ -566,6 +572,9 @@ p {
   position: absolute;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slide:first-child {
+  z-index: 1;
 }
 
 .slide img {
@@ -661,6 +670,9 @@ p {
   line-height: 1.6;
 }
 
+.services-list {
+  margin-top: 30px;
+}
 @media screen and (min-width: 768px) {
   .services-list {
     display: -webkit-box;
@@ -685,25 +697,70 @@ p {
           align-items: center;
   gap: 30px;
 }
+@media screen and (max-width: 767px) {
+  .services-list-item {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .services-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services-list-item:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 38%;
+            flex: 0 0 38%;
+  }
+}
+@media screen and (min-width: 1079px) {
+  .services-list-item:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services-list-item:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 55%;
+            flex: 0 0 55%;
+  }
+}
+@media screen and (min-width: 1079px) {
+  .services-list-item:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
 
 .list-item-number {
   color: #F2F2F2;
   font-family: "SF Pro Display", sans-serif;
   font-weight: 900;
-  font-size: 200px;
+  font-size: 50px;
   line-height: 1;
 }
-
-@media screen and (min-width: 1200px) {
-  .list-item-desc {
-    width: 279px;
-    color: #333;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 1.6;
+@media screen and (min-width: 768px) {
+  .list-item-number {
+    font-size: 200px;
   }
-  .list-item-desc--extended {
-    width: 420px;
+}
+
+.list-item-desc {
+  color: #333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+}
+@media screen and (min-width: 1079px) {
+  .list-item-desc {
+    font-size: 22px;
+    line-height: 1.63;
   }
 }
 
