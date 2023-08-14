@@ -36,7 +36,8 @@
     position: absolute;
     top: 100%;
     right: 0px;
-
+    z-index: 10;
+    
     padding: 25px;
     background-color: $main-background-color;
     overflow-y: scroll;
