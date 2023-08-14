@@ -85,4 +85,13 @@
   &:focus {
     background-color: #F9F9F9;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    svg {
+      fill: $number-color;
+    }
+  }
 }
+

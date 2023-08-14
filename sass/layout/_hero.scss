@@ -1,66 +1,139 @@
+.hero {
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 60px;
+  }
+}
+
 .slider {
   display: flex;
   justify-content: space-between;
+  // overflow: hidden;
 }
 
 .slider-desc {
-  flex: 0 0 34.19%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
 
-  padding-right: 15px;
-  padding-bottom: 107px;
+  @media screen and (min-width: $tablet) {
+    flex: 0 0 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding-right: 15px;
+    padding-bottom: 107px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex: 0 0 34.188%;
+  }
 }
 
 .hero-title {
   color: $secondary-color;
-  @include font($font-weight-thin, 64px, 1);
-  margin-bottom: 90px;
+  @include font($font-weight-thin, 54px, 1);  
+  margin-bottom: 35px;
 
   span {
     color: $main-color;
-  @include font($font-weight-bold, 64px, 1);
+    @include font($font-weight-bold, 54px, 1);
+  }
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 90px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 64px;
+
+    span {
+      font-size: 64px;
+    }
   }
 }
 
 .slider-switch {
   display: flex;
-  margin-bottom: 94px;
-  gap: 23px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 94px;
+    gap: 23px;
+  }
+}
+
+.slider-switch-item:last-child {
+  @media screen and (max-width: 767px) {
+    margin-left: calc(100% - 53px - 53px - 30px);
+  }
 }
 
 .slider-pagination {
   display: flex;
   gap: 26px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 170px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
 }
 
 .pagination-item {
   display: flex;
   align-items: center;
-  gap:26px;
+  gap: 26px;
   color: $secondary-color;
   @include font($font-weight-regular, 24px, 1);
 
   &:not(:last-child)::after {
     display: block;
-    content: '';
+    content: "";
     width: 31px;
     height: 31px;
-    background-image: url(../../images/line.jpg);
+    background-image: url(../../images/line.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
 
+  &--active {
+    color: $main-color
   }
 }
 
-.slider-gallery {  
-  flex: 0 0 65.81%;
-  max-width: 770px;
-  height: 829px;
+.slider-gallery {
+  flex: 1;
+  max-width: 100%;
+  height: 400px;
   position: relative;
-  // overflow: hidden;
+  overflow: hidden;
+
+  @media screen and (min-width: $tablet) {
+    flex: 0 0 72%;
+    max-width: 770px;
+    height: 829px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex: 0 0 65.812%;
+  }
+
+  a {
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    z-index: 1;
+  }
 }
 
 .slide {
@@ -68,11 +141,12 @@
   max-width: 770px;
   height: 829px;
   position: absolute;
-  // transition: all 0.5s;
+  transition: all $time-function;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }

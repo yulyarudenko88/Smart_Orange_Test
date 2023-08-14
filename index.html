@@ -81,17 +81,19 @@
             <div class="slider-desc">
               <h1 class="hero-title">PROJECT <span>HOME</span></h1>
               <ul class="slider-switch">
-                <li>
-                  <button class="slider-btn" aria-label="Переключатель слайдов">
+                <li class="slider-switch-item">
+                  <button class="slider-btn btn-prev" type="button" aria-label="Переключатель слайдов" disabled>
                     <svg width="17" height="8">
                       <use href="./images/icons.svg#icon-left-arrow"></use>
                     </svg>
                   </button>
                 </li>
-                <li><button class="slider-btn" aria-label="Переключатель слайдов">
-                  <svg width="17" height="8">
-                    <use href="./images/icons.svg#icon-right-arrow"></use>
-                  </svg></li>
+                <li class="slider-switch-item">
+                  <button class="slider-btn btn-next" type="button" aria-label="Переключатель слайдов">
+                    <svg width="17" height="8">
+                      <use href="./images/icons.svg#icon-right-arrow"></use>
+                  </svg>
+                </li>
               </ul>
               <ul class="slider-pagination">
                 <li class="pagination-item">01</li>
@@ -121,6 +123,12 @@
                   />
                 </li>
               </ul>
+              <a class="button" href="#"
+                >ВЗГЛЯНУТЬ
+                <svg width="17" height="8">
+                  <use href="./images/icons.svg#icon-right-arrow"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -524,6 +532,7 @@
     </footer> -->
     <script defer src="./js/addActiveClass.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/slider.js"></script>
     <script>
       const overlayElements = document.querySelectorAll(".overlay");
       overlayElements.forEach((overlay) => {
