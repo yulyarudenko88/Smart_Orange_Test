@@ -4,8 +4,6 @@
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  // @include adaptive-value(padding-left, 100, 50);
-  // @include adaptive-value(padding-right, 70, 50);
 
   @media screen and (min-width: $tablet) {
     display: flex;
