@@ -2,4 +2,9 @@
   color: $white-color;
   @include font($font-weight-bold, 16px, 1);
   margin-bottom: 25px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    font-size: 18px;
+  }
 }

@@ -16,7 +16,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: 391px;
+    min-width: 391px;
     display: flex;
     flex-direction: column;
   }
