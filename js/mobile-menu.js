@@ -1,3 +1,5 @@
+"use strict";
+
 (() => {
   const menuBtn = document.querySelector("[data-menu-button]");
   const mobileMenu= document.querySelector("[data-mobile-menu]");

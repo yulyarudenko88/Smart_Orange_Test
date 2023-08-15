@@ -1,3 +1,5 @@
+"use strict";
+
   window.addEventListener("load", changeTitleFontSize);
   window.addEventListener("resize", changeTitleFontSize);
 
