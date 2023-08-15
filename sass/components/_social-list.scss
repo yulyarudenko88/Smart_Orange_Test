@@ -18,7 +18,7 @@
 
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: block;
-  } 
+  }
 }
 
 .social-list-link {
@@ -28,11 +28,10 @@
 
   fill: $white-color;
 
-  transition: background-color $time-function, fill $time-function;
+  transition: scale $time-function;
 
   &:hover,
   &:focus {
-    background-color: $white-color;
-    fill: $footer-background-color;
+    transform: scale(1.3);
   }
 }
