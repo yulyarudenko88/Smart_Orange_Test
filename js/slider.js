@@ -15,7 +15,6 @@ nextSlide.addEventListener("click", () => {
 
   slides.forEach((slide, index) => {
     slide.style.transform = `translateX(${100 * (index - curSlide)}%)`;
-    console.log(curSlide);
   });
 
   updateButtonState();
