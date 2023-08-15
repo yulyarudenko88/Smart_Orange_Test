@@ -30,7 +30,10 @@ ul {
   } 
 
   &--bottom {
+    padding-bottom: 60px;
+    @media screen and (min-width: $tablet) {      
     padding-bottom: 120px;
+    }
   }
 }
 

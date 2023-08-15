@@ -1,13 +1,25 @@
 .connection-wrap {
-  display: flex;
   margin-top: 22px;
-  gap: 30px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .form {
-  min-width: 391px;
-  display: flex;
-  flex-direction: column;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 391px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .form-input-list {
@@ -134,4 +146,20 @@
   @include font($font-weight-regular, 14px, 1);
   letter-spacing: 0.42px;
   color: $main-color;
+}
+
+.connection-banner {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  flex-grow: 0;
+  flex-shrink: 1;
+
+  img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 65% top;
+  }
 }
