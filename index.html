@@ -24,6 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -79,7 +80,7 @@
         <div class="container">
           <div class="slider">
             <div class="slider-desc">
-              <h1 class="hero-title">PROJECT <span>HOME</span></h1>
+              <h1 class="hero-title"  data-aos="fade-up">PROJECT <span>HOME</span></h1>
               <ul class="slider-switch">
                 <li class="slider-switch-item">
                   <button
@@ -147,7 +148,7 @@
         <div class="container">
           <div class="presentation-wrap">
             <div class="presentation-gallery">
-              <div class="gallery-column animate">
+              <div class="gallery-column" data-aos="zoom-in-right">
                 <div class="gallery-item">
                   <img
                     srcset="
@@ -170,7 +171,7 @@
                   />
                 </div>
               </div>
-              <div class="gallery-item animate">
+              <div class="gallery-item" data-aos="zoom-in-left">
                 <img
                   class="gallery-item"
                   srcset="
@@ -589,5 +590,7 @@
     <script defer src="./js/changeTitleFontSize.js"></script>
     <script defer src="./js/formValidation.js"></script>
     <script defer src="./js/toggleDisabledAtrForSubmitBtn.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="./js/animation.js"></script>
   </body>
 </html>
