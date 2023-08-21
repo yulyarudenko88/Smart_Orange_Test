@@ -1,4 +1,4 @@
-# ![Image alt](./src/images/logo-header.svg) DIGITAL PROJECT!
+# ![Image alt](./images/logo-header.svg) DIGITAL PROJECT!
 
 ## Описание:
 DIGITAL PROJECT - это сайт для презентации из разного рода архитектурных решений. Совершенно адаптивный дизайн, ориентированный на любое устройство.
