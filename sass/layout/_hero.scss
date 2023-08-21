@@ -34,7 +34,7 @@
 
 .hero-title {
   color: $secondary-color;
-  @include font($font-weight-thin, 54px, 1);  
+  @include font($font-weight-thin, 54px, 1);
   margin-bottom: 35px;
 
   span {
@@ -100,14 +100,14 @@
     content: "";
     width: 31px;
     height: 31px;
-    background-image: url(../../images/line.svg);
+    background-image: url("../../images/line.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   &--active {
-    color: $main-color
+    color: $main-color;
   }
 }
 

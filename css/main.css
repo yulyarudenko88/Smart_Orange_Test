@@ -553,7 +553,7 @@ p {
   content: "";
   width: 31px;
   height: 31px;
-  background-image: url(../../images/line.svg);
+  background-image: url("../../images/line.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1110,7 +1110,7 @@ p {
 
 .checkbox-input:checked + .checkbox-checked {
   border-color: transparent;
-  background-image: url(../../images/check.svg);
+  background-image: url("../../images/check.svg");
   background-color: #F3F3F3;
   background-origin: border-box;
   background-size: contain;
