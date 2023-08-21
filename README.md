@@ -1,11 +1,11 @@
 # ![Image alt](./images/logo-header.svg) DIGITAL PROJECT!
 
 ## Описание:
-DIGITAL PROJECT - это сайт для презентации из разного рода архитектурных решений. Совершенно адаптивный дизайн, ориентированный на любое устройство.
-DIGITAL PROJECT [Live page](https://yulyarudenko88.github.io/Smart_Orange_Test/).
+DIGITAL PROJECT - это сайт для презентации разного рода архитектурных решений. Совершенно адаптивный дизайн, ориентированный на любое устройство.
+[Live page](https://yulyarudenko88.github.io/Smart_Orange_Test/).
 
 <span>
-<img src="./images/readme.png" width="400" height="400" title="welcome">
+<img src="./images/readme.png" width="300" height="300" title="welcome">
 </span>
 
 ### Особенности:
@@ -13,7 +13,7 @@ DIGITAL PROJECT [Live page](https://yulyarudenko88.github.io/Smart_Orange_Test/)
 - Адаптивный дизайн, который обеспечивает корректное отображение на различных устройствах и экранах.
 - Галерея изображений для лучшего визуального представления архитектурных решений.
 - Возможность ознакомления с ранее выполненными проектами.
-- Осуществление обратной связи путем наполнения формы.
+- Осуществление обратной связи путем заполнения формы.
 
 ### Стек технологий:
 - **HTML** 
